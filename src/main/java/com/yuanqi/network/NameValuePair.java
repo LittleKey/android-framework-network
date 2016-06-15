@@ -24,6 +24,10 @@ public class NameValuePair implements Serializable {
     this.mValue = value;
   }
 
+  public NameValuePair(String... pairString) {
+    this(pairString[0], pairString[1]);
+  }
+
   public String getName() {
     return this.mName;
   }
