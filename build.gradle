@@ -16,17 +16,18 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    buildToolsVersion '24.0.1'
+    buildToolsVersion rootProject.buildToolsVersion
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:24.1.1'
-    compile 'com.google.code.gson:gson:2.4'
-    compile 'com.facebook.fresco:fresco:0.10.0'
-    compile 'com.squareup.okhttp3:okhttp:3.3.1'
-    compile 'com.facebook.fresco:imagepipeline-okhttp3:0.11.0'
-    compile 'com.squareup.wire:wire-runtime:2.2.0'
+    compile "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+    compile "com.google.code.gson:gson:$rootProject.gsonVersion"
+    compile "com.facebook.fresco:fresco:$rootProject.frescoVersion"
+    compile "com.facebook.fresco:animated-gif:$rootProject.frescoVersion"
+    compile "com.squareup.okhttp3:okhttp:$rootProject.okhttpVersion"
+    compile "com.facebook.fresco:imagepipeline-okhttp3:$rootProject.imagepipelineOkhttp3Version"
+    compile "com.squareup.wire:wire-runtime:$rootProject.wireRuntimeVersion"
     compile project(':external:volley')
     compile project(':framework:base')
 }
