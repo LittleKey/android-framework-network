@@ -1,4 +1,4 @@
-package com.yuanqi.network;
+package me.littlekey.network;
 
 import com.facebook.cache.disk.DiskCacheConfig;
 import com.facebook.common.internal.Supplier;
@@ -7,7 +7,7 @@ import com.facebook.imagepipeline.backends.okhttp3.OkHttpImagePipelineConfigFact
 import com.facebook.imagepipeline.cache.MemoryCacheParams;
 import com.facebook.imagepipeline.core.ImagePipeline;
 import com.facebook.imagepipeline.core.ImagePipelineConfig;
-import com.yuanqi.base.utils.FileUtils;
+import me.littlekey.base.utils.FileUtils;
 
 import java.io.File;
 import java.io.IOException;

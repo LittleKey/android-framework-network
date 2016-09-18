@@ -1,4 +1,4 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.yuanqi.network">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="me.littlekey.network">
 
     <application android:allowBackup="true" android:label="@string/app_name">
 
